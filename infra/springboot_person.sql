@@ -19,7 +19,6 @@
 -- Table structure for table `person`
 --
 
-
 CREATE DATABASE springboot;
 use springboot;
 
