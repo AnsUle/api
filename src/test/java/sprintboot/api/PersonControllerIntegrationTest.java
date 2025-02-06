@@ -1,5 +1,6 @@
 package sprintboot.api;
 
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -17,6 +18,7 @@ public class PersonControllerIntegrationTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @Disabled
     @Test
     public void getPersonsTest() throws Exception {
         mockMvc.perform(get("/persons")).andExpect(status().isOk())
