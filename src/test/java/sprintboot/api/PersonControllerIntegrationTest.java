@@ -18,7 +18,6 @@ public class PersonControllerIntegrationTest {
     @Autowired
     private MockMvc mockMvc;
 
-    @Disabled
     @Test
     public void getPersonsTest() throws Exception {
         mockMvc.perform(get("/persons")).andExpect(status().isOk())

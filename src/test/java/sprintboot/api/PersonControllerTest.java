@@ -21,7 +21,6 @@ public class PersonControllerTest {
     @MockitoBean
     private PersonService personService;
 
-    @Disabled
     @Test
     public void getPersonsTest() throws Exception {
     mockMvc.perform(get("/persons")).andExpect(status().isOk());
