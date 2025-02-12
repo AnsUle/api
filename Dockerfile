@@ -3,7 +3,7 @@ FROM openjdk:21
 #Exposer le port 9000
 EXPOSE 9000
 
-#Repertoire de travail dans le conteneur pour stocker le jar
+#Repertoire de travail dans le conteneur pour stoker le jar
 WORKDIR /app
 
 #Copie du fichier JAR recuperer de l'artefact de votre projet dans le conteneur
