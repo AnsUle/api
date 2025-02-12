@@ -90,7 +90,7 @@ jobs:
         with:
           name: package.jar
 
-          # Juste pour le contrôle
+          # Juste pR le contrôle
       - name: List files in the repository
         run: ls -la ${{ github.workspace }}
 
