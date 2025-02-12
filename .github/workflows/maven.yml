@@ -84,6 +84,21 @@ jobs:
         with:
           name: package.jar
 
-        # juste pour le controle
+          # Juste pour le contrôle
       - name: List files in the repository
-        run: ls ${{ github.workspace }}
+        run: ls -la ${{ github.workspace }}
+
+      # Construction de l'image Docker et push sur DockerHub
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          file: Dockerfile
+          push: true
+          tags: ${{ secrets.DOCKERHUB_USER }}/api:latest
+
+      # Message de fin indiquant que tout s'est bien passé
+      - name: Job status
+        run: echo "This job's status is ${{ job.status }}"
+
+
