@@ -1,7 +1,11 @@
 FROM openjdk:21
 
-ENV SPRING.DATASOURCE.URL=jdbc:mysql://mysql:3306/springboot
-ENV SPRING.JPA.PROPERTIES.HIBERNATE.DIALECT=org.hibernate.dialect.MySQL8Dialect
+# Modification des variables d'environnement de l'application
+# pour fonctionner au sein du conteneur Docker
+#ENV SPRING.DATASOURCE.URL=jdbc:mysql://mysql:3306/springboot
+#ENV SPRING.JPA.PROPERTIES.HIBERNATE.DIALECT=org.hibernate.dialect.MySQL8Dialect
+#ENV spring.datasource.username=root
+#ENV spring.datasource.password=root
 
 #Exposer le port 9000
 EXPOSE 9000
