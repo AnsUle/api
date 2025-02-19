@@ -8,3 +8,6 @@ WORKDIR /app
 
 #Copie du ficH JAR recuperer de l'artefact de votre projet dans le conteneur
 COPY API-0.0.1-SNAPSHOT.jar /app/API-0.0.1-SNAPSHOT.jar
+
+# commande pour executer l'application API : java -jar API-0.0.1-SNAPSHOT.jar
+CMD["java", "-jar", "API-0.0.1-SNAPSHOT.jar"]
