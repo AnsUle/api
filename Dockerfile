@@ -13,5 +13,4 @@ WORKDIR /app
 COPY API-0.0.1-SNAPSHOT.jar /app/API-0.0.1-SNAPSHOT.jar
 
 # commande pour executer l'application API : java -jar API-0.0.1-SNAPSHOT.jar
-# blabla
 CMD ["java", "-jar", "API-0.0.1-SNAPSHOT.jar"]
