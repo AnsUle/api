@@ -1,5 +1,8 @@
 FROM openjdk:21
 
+ENV SPRING.DATASOURCE.URL=jdbc:mysql://mysql:3306/springboot
+ENV SPRING.JPA.PROPERTIES.HIBERNATE.DIALECT=org.hibernate.dialect.MySQL8Dialect
+
 #Exposer le port 9000
 EXPOSE 9000
 
